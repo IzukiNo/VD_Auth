@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIỚI THIỆU</title>
+    <style>
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; 
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            height: 100vh; /* Chiều cao 100% của viewport */
+            text-align: center; /* Căn giữa văn bản */
+        }
+        .container {
+            width: 80%; /* Đặt chiều rộng linh hoạt */
+            max-width: 600px; /* Chiều rộng tối đa để giữ nội dung gọn gàng */
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9); /* Lớp nền mờ */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Đổ bóng cho sự sang trọng */
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif; /* Phông chữ serif cho tiêu đề */
+            font-size: 28px;
+            color: #333; /* Màu sắc tiêu đề tối hơn */
+        }
+        p {
+            line-height: 1.6; /* Khoảng cách dòng để văn bản dễ đọc */
+            color: #555; /* Màu sắc văn bản nhẹ nhàng */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển động */
+        }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05); /* Phóng to nút khi di chuột qua */
+        }
+        .toggle {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .toggle a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .toggle a:hover {
+            text-decoration: underline;
+        }
+
+        nav{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop class="background-video">
+        <source src="/media/xanh.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+
+    <section id="about" class="container">
+        <h2>Giới Thiệu</h2>
+        <p><strong>Chào mừng đến với VĐ AUTH nơi hội tụ của sự sang trọng và chất lượng. Chúng tôi chuyên cung cấp những đôi giày cao cấp, được thiết kế tinh tế từ chất liệu tốt nhất, mang đến trải nghiệm thoải mái và phong cách cho người sử dụng.</strong></p>
+        <p><strong>Mục tiêu của chúng tôi là <strong>"Đơn giản nhưng hiệu quả"</strong>, không chỉ vì sản phẩm mà còn nhờ vào dịch vụ khách hàng tận tâm và chuyên nghiệp. Chúng tôi cam kết đem đến sự hài lòng tuyệt đối cho mọi khách hàng.</strong></p>
+    </section>
+
+</body>
+</html>
